@@ -1,4 +1,4 @@
-module github.com/alecthomas/kong
+module github.com/maresnic/mr-kong
 
 require (
 	github.com/alecthomas/assert/v2 v2.6.0
