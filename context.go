@@ -401,6 +401,7 @@ func (c *Context) trace(node *Node) (err error) { //nolint: gocyclo
 					c.scan.Pop()
 					// Note: tokens must be pushed in reverse order.
 					if tail := v[2:]; tail != "" {
+						tail = strings.TrimLeft(tail, " =")
 						c.scan.PushTyped(tail, ShortFlagTailToken)
 					}
 					c.scan.PushTyped(v[1:2], ShortFlagToken)
