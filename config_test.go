@@ -6,7 +6,7 @@ import (
 	"testing"
 
 	"github.com/alecthomas/assert/v2"
-	"github.com/alecthomas/kong"
+	"github.com/maresnic/mr-kong"
 )
 
 func TestMultipleConfigLoading(t *testing.T) {
